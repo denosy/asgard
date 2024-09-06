@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>30 Aug 2024, 15:48</td>
+      <td>06 Sep 2024, 17:11</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Wikipedia login presentation, as a user, I want to search for a specific data and data has tp match</td>
-          <td      class="passed"    >30</td>
           <td >0</td>
-          <td >0</td>
+          <td      class="failed"    >5</td>
+          <td     class="skipped"   >25</td>
           <td >0</td>
           <td >0</td>
           <td class="total">30</td>
 
-          <td  class="passed"    >5</td>
           <td >0</td>
+          <td  class="failed"    >5</td>
           <td class="total">5</td>
 
-          <td class="duration" data-value="12327416300">12.327</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="61547924200">1:1.547</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -171,7 +171,7 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Feature</span>
   <span class="name">Wikipedia login presentation, as a user, I want to search for a specific data and data has tp match</span>
 
@@ -189,16 +189,16 @@ Given user is on the login page of the library application</div>
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_4075768502.html">@parameterization2</a>
+       <a href="report-tag_4089311534.html">@smoke</a>
 </div>
 
 
-  <span class="lead-duration duration">2.541</span>
+  <span class="lead-duration duration">13.628</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name"></span>
 
@@ -209,48 +209,16 @@ Given user is on the login page of the library application</div>
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
-  <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-2" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">com.tor.step_defenitions.Hooks.setupMethod()</span>
-
-  <span class="lead-duration duration">2.921</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -260,22 +228,22 @@ Given user is on the login page of the library application</div>
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">User logged as a wikipedia authorized user</span>
 
-  <span class="lead-duration duration">1.046</span>
+  <span class="lead-duration duration">13.626</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-4">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-3">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -287,7 +255,7 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="before-4" class="inner-level collapse collapsable-details ">
+    <div id="before-3" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -308,6 +276,46 @@ Given user is on the login page of the library application</div>
   </div>
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#msg-4">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/header[1]/div[2]/nav[1]/div[1]/div[4]/div[1]/ul[1]/li[2]/a[1]/span[1]&quot;}
+  (Session info: chrome=128.0.6613.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3b628c7e4c85eb0703be7933b56f2d32, findElement {using=xpath, value=/html[1]/body[1]/div[1]/header[1]/div[2]/nav[1]/div[1]/div[4]/div[1]/ul[1]/li[2]/a[1]/span[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\natal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52466}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52466/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3b628c7e4c85eb0703be7933b56f2d32
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at com.tor.step_defenitions.Wikipedia_login.user_logged_as_a_wikipedia_authorized_user(Wikipedia_login.java:20)
+	at &#10045;.User logged as a wikipedia authorized user(file:///C:/Users/natal/IdeaProjects/asgard_project/src/test/resources/features/Wikipedia_login.feature:19)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -355,20 +363,20 @@ Given user is on the login page of the library application</div>
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">User enters <span class="argument">&quot;Steve Jobs&quot;</span> in the search box</span>
 
-  <span class="lead-duration duration">0.112</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-6">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-6">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -378,9 +386,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="before-6" class="inner-level collapse collapsable-details ">
+    <div id="before-6" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">Before</span>
               <span class="location name">com.tor.step_defenitions.Hooks.setupStep()</span>
 
@@ -410,9 +418,9 @@ Given user is on the login page of the library application</div>
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-7">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-7">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -422,9 +430,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="after-7" class="inner-level collapse collapsable-details ">
+    <div id="after-7" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">com.tor.step_defenitions.Hooks.teardownStep()</span>
 
@@ -446,20 +454,20 @@ Given user is on the login page of the library application</div>
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">User clicks wikipedia search button</span>
 
-  <span class="lead-duration duration">1.166</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-8">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-8">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -469,9 +477,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="before-8" class="inner-level collapse collapsable-details ">
+    <div id="before-8" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">Before</span>
               <span class="location name">com.tor.step_defenitions.Hooks.setupStep()</span>
 
@@ -501,9 +509,9 @@ Given user is on the login page of the library application</div>
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-9">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-9">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -513,13 +521,13 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="after-9" class="inner-level collapse collapsable-details ">
+    <div id="after-9" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">com.tor.step_defenitions.Hooks.teardownStep()</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -537,20 +545,20 @@ Given user is on the login page of the library application</div>
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User has to see <span class="argument">&quot;Steve Jobs&quot;</span> is in the image header</span>
 
-  <span class="lead-duration duration">0.173</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-10">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-10">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -560,9 +568,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="before-10" class="inner-level collapse collapsable-details ">
+    <div id="before-10" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">Before</span>
               <span class="location name">com.tor.step_defenitions.Hooks.setupStep()</span>
 
@@ -592,9 +600,9 @@ Given user is on the login page of the library application</div>
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-11">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-11">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -604,9 +612,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="after-11" class="inner-level collapse collapsable-details ">
+    <div id="after-11" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">com.tor.step_defenitions.Hooks.teardownStep()</span>
 
@@ -628,20 +636,20 @@ Given user is on the login page of the library application</div>
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User has to see <span class="argument">&quot;Steve Jobs&quot;</span> is in the wiki title</span>
 
-  <span class="lead-duration duration">0.017</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-12">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-12">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -651,9 +659,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="before-12" class="inner-level collapse collapsable-details ">
+    <div id="before-12" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">Before</span>
               <span class="location name">com.tor.step_defenitions.Hooks.setupStep()</span>
 
@@ -683,9 +691,9 @@ Given user is on the login page of the library application</div>
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-13">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-13">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -695,9 +703,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="after-13" class="inner-level collapse collapsable-details ">
+    <div id="after-13" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">com.tor.step_defenitions.Hooks.teardownStep()</span>
 
@@ -719,20 +727,20 @@ Given user is on the login page of the library application</div>
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User has to see <span class="argument">&quot;Steve Jobs&quot;</span> is in the main header</span>
 
-  <span class="lead-duration duration">0.025</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-14">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-14">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -742,9 +750,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="before-14" class="inner-level collapse collapsable-details ">
+    <div id="before-14" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">Before</span>
               <span class="location name">com.tor.step_defenitions.Hooks.setupStep()</span>
 
@@ -774,9 +782,9 @@ Given user is on the login page of the library application</div>
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-15">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-15">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -786,9 +794,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="after-15" class="inner-level collapse collapsable-details ">
+    <div id="after-15" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">com.tor.step_defenitions.Hooks.teardownStep()</span>
 
@@ -832,7 +840,7 @@ Given user is on the login page of the library application</div>
             <span class="keyword indention">After</span>
               <span class="location name">com.tor.step_defenitions.Hooks.teardownMethod(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.788</span>
+  <span class="lead-duration duration">1.043</span>
 
           </div>
 
@@ -841,6 +849,21 @@ Given user is on the login page of the library application</div>
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-17" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_260550741.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-17" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_260550741.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
         </div>
     </div>
@@ -855,16 +878,16 @@ Given user is on the login page of the library application</div>
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_4075768502.html">@parameterization2</a>
+       <a href="report-tag_4089311534.html">@smoke</a>
 </div>
 
 
-  <span class="lead-duration duration">2.266</span>
+  <span class="lead-duration duration">12.116</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-18">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name"></span>
 
@@ -875,48 +898,16 @@ Given user is on the login page of the library application</div>
   </span>
   <div class="description indention"></div>
 
-  <div id="element-17" class="collapse collapsable-details ">
+  <div id="element-18" class="collapse collapsable-details  in ">
 
 
-  <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-18">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-18" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">com.tor.step_defenitions.Hooks.setupMethod()</span>
-
-  <span class="lead-duration duration">2.314</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-19">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-19">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -926,15 +917,15 @@ Given user is on the login page of the library application</div>
 
   </div>
 
-  <div id="steps-19" class="inner-level collapse collapsable-details ">
+  <div id="steps-19" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">User logged as a wikipedia authorized user</span>
 
-  <span class="lead-duration duration">1.018</span>
+  <span class="lead-duration duration">12.116</span>
 
 </div>
 
@@ -975,6 +966,46 @@ Given user is on the login page of the library application</div>
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#msg-21">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/header[1]/div[2]/nav[1]/div[1]/div[4]/div[1]/ul[1]/li[2]/a[1]/span[1]&quot;}
+  (Session info: chrome=128.0.6613.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7f8e18935d2c193d9fd3ec75067fcfc6, findElement {using=xpath, value=/html[1]/body[1]/div[1]/header[1]/div[2]/nav[1]/div[1]/div[4]/div[1]/ul[1]/li[2]/a[1]/span[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\natal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52549}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52549/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7f8e18935d2c193d9fd3ec75067fcfc6
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at com.tor.step_defenitions.Wikipedia_login.user_logged_as_a_wikipedia_authorized_user(Wikipedia_login.java:20)
+	at &#10045;.User logged as a wikipedia authorized user(file:///C:/Users/natal/IdeaProjects/asgard_project/src/test/resources/features/Wikipedia_login.feature:19)
+</pre>
+      </div>
+    </div>
+  </div>
+
 
 
 
@@ -985,7 +1016,7 @@ Given user is on the login page of the library application</div>
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-21">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-22">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -997,7 +1028,7 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="after-21" class="inner-level collapse collapsable-details ">
+    <div id="after-22" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
@@ -1021,20 +1052,20 @@ Given user is on the login page of the library application</div>
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">User enters <span class="argument">&quot;Rosalind Brewer&quot;</span> in the search box</span>
 
-  <span class="lead-duration duration">0.141</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-22">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-23">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1044,13 +1075,13 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="before-22" class="inner-level collapse collapsable-details ">
+    <div id="before-23" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">Before</span>
               <span class="location name">com.tor.step_defenitions.Hooks.setupStep()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
@@ -1076,9 +1107,9 @@ Given user is on the login page of the library application</div>
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-23">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-24">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1088,9 +1119,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="after-23" class="inner-level collapse collapsable-details ">
+    <div id="after-24" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">com.tor.step_defenitions.Hooks.teardownStep()</span>
 
@@ -1112,20 +1143,20 @@ Given user is on the login page of the library application</div>
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">User clicks wikipedia search button</span>
 
-  <span class="lead-duration duration">0.996</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-24">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-25">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1135,9 +1166,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="before-24" class="inner-level collapse collapsable-details ">
+    <div id="before-25" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">Before</span>
               <span class="location name">com.tor.step_defenitions.Hooks.setupStep()</span>
 
@@ -1167,9 +1198,9 @@ Given user is on the login page of the library application</div>
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-25">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-26">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1179,9 +1210,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="after-25" class="inner-level collapse collapsable-details ">
+    <div id="after-26" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">com.tor.step_defenitions.Hooks.teardownStep()</span>
 
@@ -1203,20 +1234,20 @@ Given user is on the login page of the library application</div>
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User has to see <span class="argument">&quot;Rosalind Brewer&quot;</span> is in the image header</span>
 
-  <span class="lead-duration duration">0.066</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-26">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-27">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1226,9 +1257,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="before-26" class="inner-level collapse collapsable-details ">
+    <div id="before-27" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">Before</span>
               <span class="location name">com.tor.step_defenitions.Hooks.setupStep()</span>
 
@@ -1258,9 +1289,9 @@ Given user is on the login page of the library application</div>
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-27">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-28">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1270,9 +1301,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="after-27" class="inner-level collapse collapsable-details ">
+    <div id="after-28" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">com.tor.step_defenitions.Hooks.teardownStep()</span>
 
@@ -1294,20 +1325,20 @@ Given user is on the login page of the library application</div>
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User has to see <span class="argument">&quot;Rosalind Brewer&quot;</span> is in the wiki title</span>
 
-  <span class="lead-duration duration">0.017</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-28">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-29">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1317,9 +1348,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="before-28" class="inner-level collapse collapsable-details ">
+    <div id="before-29" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">Before</span>
               <span class="location name">com.tor.step_defenitions.Hooks.setupStep()</span>
 
@@ -1349,9 +1380,9 @@ Given user is on the login page of the library application</div>
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-29">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-30">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1361,9 +1392,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="after-29" class="inner-level collapse collapsable-details ">
+    <div id="after-30" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">com.tor.step_defenitions.Hooks.teardownStep()</span>
 
@@ -1385,20 +1416,20 @@ Given user is on the login page of the library application</div>
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User has to see <span class="argument">&quot;Rosalind Brewer&quot;</span> is in the main header</span>
 
-  <span class="lead-duration duration">0.025</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-30">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-31">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1408,9 +1439,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="before-30" class="inner-level collapse collapsable-details ">
+    <div id="before-31" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">Before</span>
               <span class="location name">com.tor.step_defenitions.Hooks.setupStep()</span>
 
@@ -1440,9 +1471,9 @@ Given user is on the login page of the library application</div>
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-31">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-32">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1452,9 +1483,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="after-31" class="inner-level collapse collapsable-details ">
+    <div id="after-32" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">com.tor.step_defenitions.Hooks.teardownStep()</span>
 
@@ -1480,7 +1511,7 @@ Given user is on the login page of the library application</div>
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-32">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-33">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1492,13 +1523,13 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="after-32" class="inner-level collapse collapsable-details ">
+    <div id="after-33" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.tor.step_defenitions.Hooks.teardownMethod(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.710</span>
+  <span class="lead-duration duration">0.993</span>
 
           </div>
 
@@ -1507,6 +1538,21 @@ Given user is on the login page of the library application</div>
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-34" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_260550741.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-34" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_260550741.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
         </div>
     </div>
@@ -1521,16 +1567,16 @@ Given user is on the login page of the library application</div>
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_4075768502.html">@parameterization2</a>
+       <a href="report-tag_4089311534.html">@smoke</a>
 </div>
 
 
-  <span class="lead-duration duration">2.221</span>
+  <span class="lead-duration duration">11.978</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-33">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-35">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name"></span>
 
@@ -1541,48 +1587,16 @@ Given user is on the login page of the library application</div>
   </span>
   <div class="description indention"></div>
 
-  <div id="element-33" class="collapse collapsable-details ">
+  <div id="element-35" class="collapse collapsable-details  in ">
 
 
-  <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-34">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-34" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">com.tor.step_defenitions.Hooks.setupMethod()</span>
-
-  <span class="lead-duration duration">2.458</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-35">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-36">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1592,22 +1606,22 @@ Given user is on the login page of the library application</div>
 
   </div>
 
-  <div id="steps-35" class="inner-level collapse collapsable-details ">
+  <div id="steps-36" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">User logged as a wikipedia authorized user</span>
 
-  <span class="lead-duration duration">0.998</span>
+  <span class="lead-duration duration">11.978</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-36">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-37">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1619,13 +1633,13 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="before-36" class="inner-level collapse collapsable-details ">
+    <div id="before-37" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">com.tor.step_defenitions.Hooks.setupStep()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
@@ -1641,96 +1655,45 @@ Given user is on the login page of the library application</div>
 
 
 
-
-
-
-
-
-
-
-
-
-  <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-37">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-37" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.tor.step_defenitions.Hooks.teardownStep()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#msg-38">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
       </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">User enters <span class="argument">&quot;Sundar Pichai&quot;</span> in the search box</span>
-
-  <span class="lead-duration duration">0.133</span>
-
-</div>
-
-
-
-  <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-38">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-38" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">com.tor.step_defenitions.Hooks.setupStep()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
+      <div id="msg-38" class="collapse collapsable-details ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/header[1]/div[2]/nav[1]/div[1]/div[4]/div[1]/ul[1]/li[2]/a[1]/span[1]&quot;}
+  (Session info: chrome=128.0.6613.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [08a16c3d991cb9ed3f67368c02e81399, findElement {using=xpath, value=/html[1]/body[1]/div[1]/header[1]/div[2]/nav[1]/div[1]/div[4]/div[1]/ul[1]/li[2]/a[1]/span[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\natal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52575}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52575/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 08a16c3d991cb9ed3f67368c02e81399
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at com.tor.step_defenitions.Wikipedia_login.user_logged_as_a_wikipedia_authorized_user(Wikipedia_login.java:20)
+	at &#10045;.User logged as a wikipedia authorized user(file:///C:/Users/natal/IdeaProjects/asgard_project/src/test/resources/features/Wikipedia_login.feature:19)
+</pre>
+      </div>
     </div>
   </div>
-
-
 
 
 
@@ -1760,6 +1723,97 @@ Given user is on the login page of the library application</div>
             <span class="keyword indention">After</span>
               <span class="location name">com.tor.step_defenitions.Hooks.teardownStep()</span>
 
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">User enters <span class="argument">&quot;Sundar Pichai&quot;</span> in the search box</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+  <div class="inner-level hooks-step-before">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-40">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-40" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief skipped">
+            <span class="keyword indention">Before</span>
+              <span class="location name">com.tor.step_defenitions.Hooks.setupStep()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="inner-level hooks-step-after">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-41">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-41" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief skipped">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.tor.step_defenitions.Hooks.teardownStep()</span>
+
   <span class="lead-duration duration">0.000</span>
 
           </div>
@@ -1778,20 +1832,20 @@ Given user is on the login page of the library application</div>
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">User clicks wikipedia search button</span>
 
-  <span class="lead-duration duration">1.015</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-40">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-42">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1801,9 +1855,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="before-40" class="inner-level collapse collapsable-details ">
+    <div id="before-42" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">Before</span>
               <span class="location name">com.tor.step_defenitions.Hooks.setupStep()</span>
 
@@ -1833,9 +1887,9 @@ Given user is on the login page of the library application</div>
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-41">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-43">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1845,9 +1899,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="after-41" class="inner-level collapse collapsable-details ">
+    <div id="after-43" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">com.tor.step_defenitions.Hooks.teardownStep()</span>
 
@@ -1869,20 +1923,20 @@ Given user is on the login page of the library application</div>
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User has to see <span class="argument">&quot;Sundar Pichai&quot;</span> is in the image header</span>
 
-  <span class="lead-duration duration">0.035</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-42">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-44">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1892,13 +1946,13 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="before-42" class="inner-level collapse collapsable-details ">
+    <div id="before-44" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">Before</span>
               <span class="location name">com.tor.step_defenitions.Hooks.setupStep()</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -1924,9 +1978,9 @@ Given user is on the login page of the library application</div>
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-43">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-45">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1936,13 +1990,13 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="after-43" class="inner-level collapse collapsable-details ">
+    <div id="after-45" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">com.tor.step_defenitions.Hooks.teardownStep()</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -1960,20 +2014,20 @@ Given user is on the login page of the library application</div>
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User has to see <span class="argument">&quot;Sundar Pichai&quot;</span> is in the wiki title</span>
 
-  <span class="lead-duration duration">0.016</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-44">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-46">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -1983,9 +2037,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="before-44" class="inner-level collapse collapsable-details ">
+    <div id="before-46" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">Before</span>
               <span class="location name">com.tor.step_defenitions.Hooks.setupStep()</span>
 
@@ -2015,9 +2069,9 @@ Given user is on the login page of the library application</div>
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-45">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-47">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -2027,9 +2081,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="after-45" class="inner-level collapse collapsable-details ">
+    <div id="after-47" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">com.tor.step_defenitions.Hooks.teardownStep()</span>
 
@@ -2051,20 +2105,20 @@ Given user is on the login page of the library application</div>
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User has to see <span class="argument">&quot;Sundar Pichai&quot;</span> is in the main header</span>
 
-  <span class="lead-duration duration">0.022</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-46">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-48">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -2074,9 +2128,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="before-46" class="inner-level collapse collapsable-details ">
+    <div id="before-48" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">Before</span>
               <span class="location name">com.tor.step_defenitions.Hooks.setupStep()</span>
 
@@ -2106,9 +2160,9 @@ Given user is on the login page of the library application</div>
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-47">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-49">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -2118,9 +2172,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="after-47" class="inner-level collapse collapsable-details ">
+    <div id="after-49" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">com.tor.step_defenitions.Hooks.teardownStep()</span>
 
@@ -2146,7 +2200,7 @@ Given user is on the login page of the library application</div>
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-48">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-50">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2158,13 +2212,13 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="after-48" class="inner-level collapse collapsable-details ">
+    <div id="after-50" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.tor.step_defenitions.Hooks.teardownMethod(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.696</span>
+  <span class="lead-duration duration">0.946</span>
 
           </div>
 
@@ -2173,6 +2227,21 @@ Given user is on the login page of the library application</div>
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-51" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_260550741.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-51" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_260550741.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
         </div>
     </div>
@@ -2187,16 +2256,16 @@ Given user is on the login page of the library application</div>
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_4075768502.html">@parameterization2</a>
+       <a href="report-tag_4089311534.html">@smoke</a>
 </div>
 
 
-  <span class="lead-duration duration">2.702</span>
+  <span class="lead-duration duration">11.893</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-49">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-52">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name"></span>
 
@@ -2207,48 +2276,16 @@ Given user is on the login page of the library application</div>
   </span>
   <div class="description indention"></div>
 
-  <div id="element-49" class="collapse collapsable-details ">
+  <div id="element-52" class="collapse collapsable-details  in ">
 
 
-  <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-50">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-50" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">com.tor.step_defenitions.Hooks.setupMethod()</span>
-
-  <span class="lead-duration duration">2.186</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-51">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-53">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -2258,106 +2295,15 @@ Given user is on the login page of the library application</div>
 
   </div>
 
-  <div id="steps-51" class="inner-level collapse collapsable-details ">
+  <div id="steps-53" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">User logged as a wikipedia authorized user</span>
 
-  <span class="lead-duration duration">1.301</span>
-
-</div>
-
-
-
-  <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-52">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-52" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">com.tor.step_defenitions.Hooks.setupStep()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-53">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-53" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.tor.step_defenitions.Hooks.teardownStep()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">User enters <span class="argument">&quot;Marie Curie&quot;</span> in the search box</span>
-
-  <span class="lead-duration duration">0.152</span>
+  <span class="lead-duration duration">11.892</span>
 
 </div>
 
@@ -2398,6 +2344,46 @@ Given user is on the login page of the library application</div>
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#msg-55">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
+      </div>
+      <div id="msg-55" class="collapse collapsable-details ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/header[1]/div[2]/nav[1]/div[1]/div[4]/div[1]/ul[1]/li[2]/a[1]/span[1]&quot;}
+  (Session info: chrome=128.0.6613.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d7b315802c59bd949ac6b4cfd64f374f, findElement {using=xpath, value=/html[1]/body[1]/div[1]/header[1]/div[2]/nav[1]/div[1]/div[4]/div[1]/ul[1]/li[2]/a[1]/span[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\natal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52601}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52601/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d7b315802c59bd949ac6b4cfd64f374f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at com.tor.step_defenitions.Wikipedia_login.user_logged_as_a_wikipedia_authorized_user(Wikipedia_login.java:20)
+	at &#10045;.User logged as a wikipedia authorized user(file:///C:/Users/natal/IdeaProjects/asgard_project/src/test/resources/features/Wikipedia_login.feature:19)
+</pre>
+      </div>
+    </div>
+  </div>
+
 
 
 
@@ -2408,7 +2394,7 @@ Given user is on the login page of the library application</div>
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-55">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-56">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2420,7 +2406,7 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="after-55" class="inner-level collapse collapsable-details ">
+    <div id="after-56" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
@@ -2444,20 +2430,111 @@ Given user is on the login page of the library application</div>
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">User enters <span class="argument">&quot;Marie Curie&quot;</span> in the search box</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+  <div class="inner-level hooks-step-before">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-57">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-57" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief skipped">
+            <span class="keyword indention">Before</span>
+              <span class="location name">com.tor.step_defenitions.Hooks.setupStep()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="inner-level hooks-step-after">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-58">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-58" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief skipped">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.tor.step_defenitions.Hooks.teardownStep()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">User clicks wikipedia search button</span>
 
-  <span class="lead-duration duration">1.085</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-56">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-59">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -2467,9 +2544,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="before-56" class="inner-level collapse collapsable-details ">
+    <div id="before-59" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">Before</span>
               <span class="location name">com.tor.step_defenitions.Hooks.setupStep()</span>
 
@@ -2499,9 +2576,9 @@ Given user is on the login page of the library application</div>
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-57">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-60">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -2511,9 +2588,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="after-57" class="inner-level collapse collapsable-details ">
+    <div id="after-60" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">com.tor.step_defenitions.Hooks.teardownStep()</span>
 
@@ -2535,20 +2612,20 @@ Given user is on the login page of the library application</div>
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User has to see <span class="argument">&quot;Marie Curie&quot;</span> is in the image header</span>
 
-  <span class="lead-duration duration">0.123</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-58">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-61">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -2558,9 +2635,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="before-58" class="inner-level collapse collapsable-details ">
+    <div id="before-61" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">Before</span>
               <span class="location name">com.tor.step_defenitions.Hooks.setupStep()</span>
 
@@ -2590,9 +2667,9 @@ Given user is on the login page of the library application</div>
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-59">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-62">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -2602,9 +2679,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="after-59" class="inner-level collapse collapsable-details ">
+    <div id="after-62" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">com.tor.step_defenitions.Hooks.teardownStep()</span>
 
@@ -2626,20 +2703,20 @@ Given user is on the login page of the library application</div>
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User has to see <span class="argument">&quot;Marie Curie&quot;</span> is in the wiki title</span>
 
-  <span class="lead-duration duration">0.015</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-60">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-63">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -2649,9 +2726,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="before-60" class="inner-level collapse collapsable-details ">
+    <div id="before-63" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">Before</span>
               <span class="location name">com.tor.step_defenitions.Hooks.setupStep()</span>
 
@@ -2681,9 +2758,9 @@ Given user is on the login page of the library application</div>
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-61">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-64">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -2693,13 +2770,13 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="after-61" class="inner-level collapse collapsable-details ">
+    <div id="after-64" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">com.tor.step_defenitions.Hooks.teardownStep()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
@@ -2717,20 +2794,20 @@ Given user is on the login page of the library application</div>
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">User has to see <span class="argument">&quot;Marie Curie&quot;</span> is in the main header</span>
 
-  <span class="lead-duration duration">0.024</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-62">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-65">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -2740,9 +2817,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="before-62" class="inner-level collapse collapsable-details ">
+    <div id="before-65" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">Before</span>
               <span class="location name">com.tor.step_defenitions.Hooks.setupStep()</span>
 
@@ -2772,9 +2849,9 @@ Given user is on the login page of the library application</div>
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-63">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-66">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -2784,13 +2861,13 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="after-63" class="inner-level collapse collapsable-details ">
+    <div id="after-66" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">com.tor.step_defenitions.Hooks.teardownStep()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
@@ -2812,7 +2889,7 @@ Given user is on the login page of the library application</div>
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-64">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-67">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2824,13 +2901,13 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="after-64" class="inner-level collapse collapsable-details ">
+    <div id="after-67" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.tor.step_defenitions.Hooks.teardownMethod(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.733</span>
+  <span class="lead-duration duration">0.912</span>
 
           </div>
 
@@ -2839,6 +2916,21 @@ Given user is on the login page of the library application</div>
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-68" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_260550741.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-68" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_260550741.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
         </div>
     </div>
@@ -2853,16 +2945,16 @@ Given user is on the login page of the library application</div>
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_4075768502.html">@parameterization2</a>
+       <a href="report-tag_4089311534.html">@smoke</a>
 </div>
 
 
-  <span class="lead-duration duration">2.596</span>
+  <span class="lead-duration duration">11.931</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-65">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-69">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name"></span>
 
@@ -2873,48 +2965,16 @@ Given user is on the login page of the library application</div>
   </span>
   <div class="description indention"></div>
 
-  <div id="element-65" class="collapse collapsable-details ">
+  <div id="element-69" class="collapse collapsable-details  in ">
 
 
-  <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-66">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-66" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">com.tor.step_defenitions.Hooks.setupMethod()</span>
-
-  <span class="lead-duration duration">2.162</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-67">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-70">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -2924,22 +2984,22 @@ Given user is on the login page of the library application</div>
 
   </div>
 
-  <div id="steps-67" class="inner-level collapse collapsable-details ">
+  <div id="steps-70" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">User logged as a wikipedia authorized user</span>
 
-  <span class="lead-duration duration">0.942</span>
+  <span class="lead-duration duration">11.930</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-68">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-71">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2951,7 +3011,7 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="before-68" class="inner-level collapse collapsable-details ">
+    <div id="before-71" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -2973,187 +3033,45 @@ Given user is on the login page of the library application</div>
 
 
 
-
-
-
-
-
-
-
-
-
-  <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-69">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-69" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.tor.step_defenitions.Hooks.teardownStep()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#msg-72">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
       </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">User enters <span class="argument">&quot;Albert Einstein&quot;</span> in the search box</span>
-
-  <span class="lead-duration duration">0.151</span>
-
-</div>
-
-
-
-  <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-70">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-70" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">com.tor.step_defenitions.Hooks.setupStep()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-71">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-71" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.tor.step_defenitions.Hooks.teardownStep()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
+      <div id="msg-72" class="collapse collapsable-details ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[1]/header[1]/div[2]/nav[1]/div[1]/div[4]/div[1]/ul[1]/li[2]/a[1]/span[1]&quot;}
+  (Session info: chrome=128.0.6613.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0a3b86561e3ef6765a31ed01aebfa185, findElement {using=xpath, value=/html[1]/body[1]/div[1]/header[1]/div[2]/nav[1]/div[1]/div[4]/div[1]/ul[1]/li[2]/a[1]/span[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\natal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52627}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52627/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0a3b86561e3ef6765a31ed01aebfa185
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at com.tor.step_defenitions.Wikipedia_login.user_logged_as_a_wikipedia_authorized_user(Wikipedia_login.java:20)
+	at &#10045;.User logged as a wikipedia authorized user(file:///C:/Users/natal/IdeaProjects/asgard_project/src/test/resources/features/Wikipedia_login.feature:19)
+</pre>
       </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">User clicks wikipedia search button</span>
-
-  <span class="lead-duration duration">1.230</span>
-
-</div>
-
-
-
-  <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-72">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-72" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">com.tor.step_defenitions.Hooks.setupStep()</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
     </div>
   </div>
-
-
 
 
 
@@ -3201,20 +3119,20 @@ Given user is on the login page of the library application</div>
       <div class="step">
 
 
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">User has to see <span class="argument">&quot;Albert Einstein&quot;</span> is in the image header</span>
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">User enters <span class="argument">&quot;Albert Einstein&quot;</span> in the search box</span>
 
-  <span class="lead-duration duration">0.238</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-74">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-74">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -3224,100 +3142,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="before-74" class="inner-level collapse collapsable-details ">
+    <div id="before-74" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">com.tor.step_defenitions.Hooks.setupStep()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-75">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-75" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.tor.step_defenitions.Hooks.teardownStep()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">User has to see <span class="argument">&quot;Albert Einstein&quot;</span> is in the wiki title</span>
-
-  <span class="lead-duration duration">0.012</span>
-
-</div>
-
-
-
-  <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-76">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-76" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">Before</span>
               <span class="location name">com.tor.step_defenitions.Hooks.setupStep()</span>
 
@@ -3347,9 +3174,9 @@ Given user is on the login page of the library application</div>
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-77">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-75">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -3359,9 +3186,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="after-77" class="inner-level collapse collapsable-details ">
+    <div id="after-75" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">com.tor.step_defenitions.Hooks.teardownStep()</span>
 
@@ -3383,20 +3210,20 @@ Given user is on the login page of the library application</div>
       <div class="step">
 
 
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">User has to see <span class="argument">&quot;Albert Einstein&quot;</span> is in the main header</span>
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">User clicks wikipedia search button</span>
 
-  <span class="lead-duration duration">0.020</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
 
 
   <div class="inner-level hooks-step-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-78">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-76">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -3406,9 +3233,9 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="before-78" class="inner-level collapse collapsable-details ">
+    <div id="before-76" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
             <span class="keyword indention">Before</span>
               <span class="location name">com.tor.step_defenitions.Hooks.setupStep()</span>
 
@@ -3438,9 +3265,9 @@ Given user is on the login page of the library application</div>
 
 
   <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-79">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-77">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -3450,9 +3277,282 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="after-79" class="inner-level collapse collapsable-details ">
+    <div id="after-77" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief skipped">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.tor.step_defenitions.Hooks.teardownStep()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">User has to see <span class="argument">&quot;Albert Einstein&quot;</span> is in the image header</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+  <div class="inner-level hooks-step-before">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-78">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-78" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief skipped">
+            <span class="keyword indention">Before</span>
+              <span class="location name">com.tor.step_defenitions.Hooks.setupStep()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="inner-level hooks-step-after">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-79">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-79" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief skipped">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.tor.step_defenitions.Hooks.teardownStep()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">User has to see <span class="argument">&quot;Albert Einstein&quot;</span> is in the wiki title</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+  <div class="inner-level hooks-step-before">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-80">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-80" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief skipped">
+            <span class="keyword indention">Before</span>
+              <span class="location name">com.tor.step_defenitions.Hooks.setupStep()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="inner-level hooks-step-after">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-81">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-81" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief skipped">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.tor.step_defenitions.Hooks.teardownStep()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">User has to see <span class="argument">&quot;Albert Einstein&quot;</span> is in the main header</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+  <div class="inner-level hooks-step-before">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-82">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-82" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief skipped">
+            <span class="keyword indention">Before</span>
+              <span class="location name">com.tor.step_defenitions.Hooks.setupStep()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="inner-level hooks-step-after">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-83">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-83" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief skipped">
             <span class="keyword indention">After</span>
               <span class="location name">com.tor.step_defenitions.Hooks.teardownStep()</span>
 
@@ -3478,7 +3578,7 @@ Given user is on the login page of the library application</div>
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-80">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-84">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -3490,13 +3590,13 @@ Given user is on the login page of the library application</div>
 
     </div>
 
-    <div id="after-80" class="inner-level collapse collapsable-details ">
+    <div id="after-84" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.tor.step_defenitions.Hooks.teardownMethod(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.728</span>
+  <span class="lead-duration duration">0.912</span>
 
           </div>
 
@@ -3505,6 +3605,21 @@ Given user is on the login page of the library application</div>
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-85" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_260550741.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-85" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_260550741.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
         </div>
     </div>

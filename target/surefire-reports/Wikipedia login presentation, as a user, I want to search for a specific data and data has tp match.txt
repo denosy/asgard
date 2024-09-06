@@ -1,4 +1,64 @@
 -------------------------------------------------------------------------------
 Test set: Wikipedia login presentation, as a user, I want to search for a specific data and data has tp match
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.215 s - in Wikipedia login presentation, as a user, I want to search for a specific data and data has tp match
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 66.602 s <<< FAILURE! - in Wikipedia login presentation, as a user, I want to search for a specific data and data has tp match
+Wikipedia login presentation, as a user, I want to search for a specific data and data has tp match. #2  Time elapsed: 14.821 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"/html[1]/body[1]/div[1]/header[1]/div[2]/nav[1]/div[1]/div[4]/div[1]/ul[1]/li[2]/a[1]/span[1]"}
+  (Session info: chrome=128.0.6613.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3b628c7e4c85eb0703be7933b56f2d32, findElement {using=xpath, value=/html[1]/body[1]/div[1]/header[1]/div[2]/nav[1]/div[1]/div[4]/div[1]/ul[1]/li[2]/a[1]/span[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\natal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52466}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52466/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3b628c7e4c85eb0703be7933b56f2d32
+
+Wikipedia login presentation, as a user, I want to search for a specific data and data has tp match. #3  Time elapsed: 13.152 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"/html[1]/body[1]/div[1]/header[1]/div[2]/nav[1]/div[1]/div[4]/div[1]/ul[1]/li[2]/a[1]/span[1]"}
+  (Session info: chrome=128.0.6613.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7f8e18935d2c193d9fd3ec75067fcfc6, findElement {using=xpath, value=/html[1]/body[1]/div[1]/header[1]/div[2]/nav[1]/div[1]/div[4]/div[1]/ul[1]/li[2]/a[1]/span[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\natal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52549}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52549/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7f8e18935d2c193d9fd3ec75067fcfc6
+
+Wikipedia login presentation, as a user, I want to search for a specific data and data has tp match. #4  Time elapsed: 12.945 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"/html[1]/body[1]/div[1]/header[1]/div[2]/nav[1]/div[1]/div[4]/div[1]/ul[1]/li[2]/a[1]/span[1]"}
+  (Session info: chrome=128.0.6613.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [08a16c3d991cb9ed3f67368c02e81399, findElement {using=xpath, value=/html[1]/body[1]/div[1]/header[1]/div[2]/nav[1]/div[1]/div[4]/div[1]/ul[1]/li[2]/a[1]/span[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\natal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52575}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52575/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 08a16c3d991cb9ed3f67368c02e81399
+
+Wikipedia login presentation, as a user, I want to search for a specific data and data has tp match. #5  Time elapsed: 12.825 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"/html[1]/body[1]/div[1]/header[1]/div[2]/nav[1]/div[1]/div[4]/div[1]/ul[1]/li[2]/a[1]/span[1]"}
+  (Session info: chrome=128.0.6613.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d7b315802c59bd949ac6b4cfd64f374f, findElement {using=xpath, value=/html[1]/body[1]/div[1]/header[1]/div[2]/nav[1]/div[1]/div[4]/div[1]/ul[1]/li[2]/a[1]/span[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\natal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52601}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52601/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d7b315802c59bd949ac6b4cfd64f374f
+
+Wikipedia login presentation, as a user, I want to search for a specific data and data has tp match. #6  Time elapsed: 12.857 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"/html[1]/body[1]/div[1]/header[1]/div[2]/nav[1]/div[1]/div[4]/div[1]/ul[1]/li[2]/a[1]/span[1]"}
+  (Session info: chrome=128.0.6613.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0a3b86561e3ef6765a31ed01aebfa185, findElement {using=xpath, value=/html[1]/body[1]/div[1]/header[1]/div[2]/nav[1]/div[1]/div[4]/div[1]/ul[1]/li[2]/a[1]/span[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\natal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52627}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52627/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0a3b86561e3ef6765a31ed01aebfa185
+

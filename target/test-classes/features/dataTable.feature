@@ -10,7 +10,7 @@ Feature: Cucumber Data Tables
       | pear       |
       | eggplant   |
 
-
+  @smoke
   Scenario: Avengers member
     Then  user should see any data he wants
       | name     | Tony         |
@@ -22,7 +22,7 @@ Feature: Cucumber Data Tables
       | phone    | 111-111-1111 |
 
 
-  @dataTable
+  @regression
   Scenario: User should be able to see all 12 month in months
     Given User is on the dropDowns page
     Then  user should see below info in month dropDown

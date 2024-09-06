@@ -3,7 +3,7 @@ Feature: Wikipedia login presentation, as a user, I want to search for a specifi
 
 Given user is on the login page of the library application
 
-  @parameterization
+
   Scenario:
     Given User logged as a wikipedia authorized user
     When User enters "Steve Jobs" in the search box
@@ -14,7 +14,7 @@ Given user is on the login page of the library application
 
 
 
-  @parameterization2
+
   Scenario Outline:
     Given User logged as a wikipedia authorized user
     When User enters "<searchValue>" in the search box

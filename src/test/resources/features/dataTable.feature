@@ -22,7 +22,7 @@ Feature: Cucumber Data Tables
       | phone    | 111-111-1111 |
 
 
-
+  @regression
   Scenario: User should be able to see all 12 month in months
     Given User is on the dropDowns page
     Then  user should see below info in month dropDown

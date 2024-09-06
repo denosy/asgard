@@ -1,6 +1,6 @@
 node {
     stage('Clone code') {
-        git 'https://github.com/mehmetCt/demo-project.git'
+        git 'https://github.com/denosy/saturn.git'
     }
 
     stage('Run tests'){
@@ -23,3 +23,4 @@ node {
             undefinedStepsNumber: -1
     }
 }
+origin

@@ -1,6 +1,6 @@
 node {
     stage('Clone code') {
-        git 'https://github.com/denosy/saturn.git'
+        git 'https://github.com/denosy/asgard.git'
     }
 
     stage('Run tests'){

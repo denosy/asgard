@@ -3,7 +3,7 @@ Feature: Users should be able to login
   As a user, I should be able to login with correct credentials to different accounts. And dashboard should be displayed.
   Accounts are: driver, sales manager, store manager
 
-  @wip
+
   Scenario Outline: Login with
     Given user is on the login page
     When the user login with given credentials from "<SheetName>" and <RowNumber>

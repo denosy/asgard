@@ -1,6 +1,4 @@
-package com.tor.jdbc;
-
-import java.sql.*;
+package com.thor.jdbc;
 
 public class OracleConnection {
 

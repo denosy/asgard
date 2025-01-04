@@ -1,6 +1,6 @@
-package com.tor.pages;
+package com.thor.pages;
 
-import com.tor.utilities.Driver;
+import com.thor.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;

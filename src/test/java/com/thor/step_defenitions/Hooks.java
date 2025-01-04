@@ -1,12 +1,12 @@
-package com.tor.step_defenitions;
+package com.thor.step_defenitions;
 
 /*
 In this class we are able to crate "pre" and "post" condition for all the scenarios and steps
  */
 
 
-import com.tor.utilities.ConfigurationReader;
-import com.tor.utilities.Driver;
+import com.thor.utilities.ConfigurationReader;
+import com.thor.utilities.Driver;
 import io.cucumber.java.*;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;

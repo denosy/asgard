@@ -1,4 +1,4 @@
-package com.tor.utilities;
+package com.thor.utilities;
 
 import java.io.FileInputStream;
 import java.io.IOException;

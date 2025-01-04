@@ -1,9 +1,9 @@
-package com.tor.step_defenitions;
+package com.thor.step_defenitions;
 
-import com.tor.pages.vyTruckPage;
-import com.tor.utilities.ConfigurationReader;
-import com.tor.utilities.Driver;
-import com.tor.utilities.ExcelUtil;
+import com.thor.pages.vyTruckPage;
+import com.thor.utilities.ConfigurationReader;
+import com.thor.utilities.Driver;
+import com.thor.utilities.ExcelUtil;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

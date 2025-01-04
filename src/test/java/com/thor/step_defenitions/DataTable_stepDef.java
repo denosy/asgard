@@ -1,7 +1,7 @@
-package com.tor.step_defenitions;
+package com.thor.step_defenitions;
 
-import com.tor.pages.DropDownsPAge;
-import com.tor.utilities.Driver;
+import com.thor.pages.DropDownsPAge;
+import com.thor.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;

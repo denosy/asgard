@@ -1,7 +1,7 @@
-package com.tor.step_defenitions;
+package com.thor.step_defenitions;
 
-import com.tor.pages.DropDownsPAge;
-import com.tor.utilities.Driver;
+import com.thor.pages.DropDownsPAge;
+import com.thor.utilities.Driver;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
@@ -15,9 +15,11 @@ public class CarsDropdown {
     DropDownsPAge dropDownsPAge = new DropDownsPAge();
 
     @Then("user should see below info in cars dropDown")
-    public void user_should_see_below_info_in_cars_drop_down(List<String> carsDrop) {
+    public void user_should_see_below_info_in_cars_drop_down(List<String> carsDrop) throws InterruptedException {
 
         Driver.getDriver().get("https://only-testing-blog.blogspot.com/2014/01/textbox.html?");
+
+        Thread.sleep(2000);
 
         Select select = new Select(dropDownsPAge.carsElements);
 

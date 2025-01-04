@@ -1,4 +1,4 @@
-package com.tor.utilities;
+package com.thor.utilities;
 
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;

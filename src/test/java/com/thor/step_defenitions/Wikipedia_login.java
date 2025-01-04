@@ -1,9 +1,9 @@
-package com.tor.step_defenitions;
+package com.thor.step_defenitions;
 
-import com.tor.pages.WikipediaPage;
-import com.tor.utilities.BrowserUtils;
-import com.tor.utilities.ConfigurationReader;
-import com.tor.utilities.Driver;
+import com.thor.pages.WikipediaPage;
+import com.thor.utilities.BrowserUtils;
+import com.thor.utilities.ConfigurationReader;
+import com.thor.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

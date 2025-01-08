@@ -18,9 +18,13 @@ public class DropDownsPAge {
     public WebElement monthDropDown;
 
 
-
-
     @FindBy(id = "Carlist")
     public WebElement carsElements;
+
+
+    @FindBy(xpath = "//div[@id='Attribution1']//div[@class='widget-content']")
+    public WebElement lastPageElement;
+
+
 
 }

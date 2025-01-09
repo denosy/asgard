@@ -11,9 +11,8 @@ import io.restassured.path.json.JsonPath;
 import org.junit.Assert;
 
 import static io.restassured.RestAssured.*;
-import static org.junit.jupiter.api.Assertions.*;
 
-public class Hippo_API_stepDef {
+public class ZippopotamAPI1_stepDef {
 
     Response response;
     String url = "https://api.zippopotam.us/us/";
@@ -25,7 +24,7 @@ public class Hippo_API_stepDef {
         response = given()
                 .accept(ContentType.JSON)
                 .when()
-                .get(url + zipCode);
+                .get(url + zipCode).prettyPeek();
 
     }
 
@@ -54,6 +53,7 @@ public class Hippo_API_stepDef {
         Assert.assertEquals(actual_statusCode, response.getStatusCode());
 
     }
+
 
 
 }

@@ -1,6 +1,6 @@
 Feature: api call
 
-  @Api
+  @zip1
   Scenario: User should get the response form API call
 
     Given : User is on the zippoptam Page and User sending zip code "90210"

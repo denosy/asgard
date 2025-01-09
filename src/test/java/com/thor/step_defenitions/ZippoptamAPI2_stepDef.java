@@ -11,9 +11,8 @@ import io.restassured.path.json.JsonPath;
 import org.junit.Assert;
 
 import static io.restassured.RestAssured.*;
-import static org.junit.jupiter.api.Assertions.*;
 
-public class SimpleAPI_call_stepDef {
+public class ZippoptamAPI2_stepDef {
 
     Response response;
     String url = "https://api.zippopotam.us/us/";

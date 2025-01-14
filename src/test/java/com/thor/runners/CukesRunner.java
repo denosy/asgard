@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
 
             features = "src/test/resources/features", // path feature files folder
             glue = "com/thor/step_defenitions", //path to step def
-            dryRun = true, //run scenarios
+            dryRun = false, //run scenarios
             tags = "@us02", // tag to choose particular scenario/method
             publish = true // true - to get link with public html report
 )

@@ -1,5 +1,6 @@
 package com.thor.step_defenitions;
 
+import com.thor.utilities.ConfigurationReader;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -15,8 +16,6 @@ import static io.restassured.RestAssured.*;
 
 public class ApiFaker1_stepDef {
 
-
-    String url = "https://fakerapi.it/api/v2/books";
     Response response;
     JsonPath jsonPath;
 
@@ -28,7 +27,7 @@ public class ApiFaker1_stepDef {
                 .accept(ContentType.JSON)
                 .queryParam(queryParam, queryValue)
                 .when()
-                .get(url).prettyPeek();
+                .get(ConfigurationReader.getProperty("ApiFaker.url")).prettyPeek();
 
     }
 

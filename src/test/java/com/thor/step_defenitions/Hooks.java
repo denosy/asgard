@@ -6,47 +6,46 @@ In this class we are able to crate "pre" and "post" condition for all the scenar
 
 
 import com.thor.utilities.ConfigurationReader;
+import com.thor.utilities.DB_Util;
 import com.thor.utilities.Driver;
 import io.cucumber.java.*;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
+import java.time.Duration;
+
 public class Hooks {
 
-    @Before (value = "@parameterization2")  //- and it`s going to be applied only for specific scenario, and specified order for executing
-    public void setupMethod() {
-        Driver.getDriver().get(ConfigurationReader.getProperty("url_wiki"));
+    @Before("@ui")
+    public void setUp(){
+        Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        Driver.getDriver().manage().window().maximize();
+        Driver.getDriver().get(ConfigurationReader.getProperty("library_url"));
+
     }
 
-    @After                         //keeping track the scenario that is currently being executed;
-    public void teardownMethod(Scenario scenario) {
-
-        if (scenario.isFailed()){
-
-            //It`s coming from another interface, and we have to cast our Driver to be able to use this method
-            byte[]screenshot =((TakesScreenshot)Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
-            scenario.attach(screenshot,"image/png",scenario.getName());
-
+    @After("@ui")
+    public void tearDown(Scenario scenario){
+        if(scenario.isFailed()){
+            final byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+            scenario.attach(screenshot,"image/png","screenshot");
         }
 
-       // System.out.println("--> @After : RUNNING AFTER EACH SCENARIO");
         Driver.closeDriver();
 
     }
 
-
-    @BeforeStep
-    public void setupStep(){
-
-      //  System.out.println("before STep");
-
+    @Before("@db")
+    public void setUpDB(){
+        System.out.println("Connecting to database...");
+        DB_Util.createConnection();
     }
 
-    @AfterStep
-    public void teardownStep(){
-
-      //  System.out.println("after STep");
-
+    @After("@db")
+    public void tearDownDB(){
+        System.out.println("close database connection...");
+        DB_Util.destroy();
     }
+
 
 }

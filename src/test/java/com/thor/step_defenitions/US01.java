@@ -12,6 +12,7 @@ import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 import org.hamcrest.Matchers;
+import org.junit.Assert;
 
 
 import java.util.List;
@@ -45,7 +46,7 @@ public class US01 {
     @When("I send GET request to {string} endpoint")
     public void i_send_get_request_to_endpoint(String endPoint) {
 
-        response = givenPart.when().get(ConfigurationReader.getProperty("library.baseUri") + endPoint).prettyPeek();
+        response = givenPart.when().get(ConfigurationReader.getProperty("library.baseUri") + endPoint);
         thenPart = response.then();
 
     }
@@ -72,7 +73,6 @@ public class US01 {
 
 
 
-
     /**
      *** ------------------------------------ US2 ---------------------------------- ***
      */
@@ -80,24 +80,25 @@ public class US01 {
     @Given("Path param is {string}")
     public void path_param_is(String pathParam) {
 
-        id = givenPart.pathParam("id", pathParam);
+       id = givenPart.pathParam("id", pathParam);
+
 
     }
     @Then("{string} field should be same with path param")
-    public void field_should_be_same_with_path_param(String sameAsParam) {
+    public void field_should_be_same_with_path_param(String id_field) {
 
-            thenPart.body(sameAsParam,is(equalTo(id)));
+        thenPart.body("id",is(equalTo("1")));
 
     }
     @Then("following fields should not be null")
     public void following_fields_should_not_be_null(io.cucumber.datatable.DataTable dataTable) {
 
-        //Разобраться как дата тейбл делать асоршен - посмотреть урок кукумбер АРI
+        thenPart.body("full_name",is(notNullValue()));
+        thenPart.body("email",is(notNullValue()));
+        thenPart.body("password",is(notNullValue()));
 
-
-
+        System.out.println("dataTable = " + dataTable);
 
     }
-
 
 }

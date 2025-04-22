@@ -10,7 +10,7 @@ Feature: Cucumber Data Tables
       | pear       |
       | eggplant   |
 
-  @smoke
+
   Scenario: Avengers member
     Then  user should see any data he wants
       | name     | Tony         |

@@ -1,6 +1,6 @@
-select * from books;
+select  id from books;
 
 
-select id from book_borrow;
+select * from book_borrow;
 
 ## ctrl + enter
